@@ -17,7 +17,7 @@ module.exports = {
       max: 10
     },
     migrations: 'knex_migrations',
-    derectory: './migrations'
+    directory: './migrations'
   },
   useNullAsDefault: true
 };

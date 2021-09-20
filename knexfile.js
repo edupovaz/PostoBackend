@@ -8,5 +8,16 @@ module.exports = {
       filename: './data/database.sqlite3'
     }
   },
+
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: 'knex_migrations',
+    derectory: './migrations'
+  },
   useNullAsDefault: true
 };

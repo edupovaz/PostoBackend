@@ -16,8 +16,11 @@ module.exports = {
       min: 2,
       max: 10
     },
-    migrations: 'knex_migrations',
-    directory: './migrations'
+    migrations:{
+
+      tablename: 'knex_migrations',
+      directory: './migrations'
+    }
   },
   useNullAsDefault: true
 };

@@ -1,7 +1,7 @@
 const express = require('express');
 const server = express()
 const Posto = require('./modules/dbHelper')
-const PORT = 5000;
+const port = process.env.PORT || 5000;
 const cors = require('cors')
 
 server.use(express.json())
@@ -293,7 +293,7 @@ server.delete('/oleos/:id', (req,res) =>{
     })
 })
 
-server.listen(PORT)
+server.listen(port)
 
 
 
